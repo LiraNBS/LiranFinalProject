@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+} 
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+
+}
+.bg-header {
+  background-image: url('background2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
+  /* position: relative !important; */
+  
+
+
+}
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+/* 
+.mainpage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 14vh 86vh;
+  grid-template-areas: 
+  "header"
+  "coins"
+} */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+      /* .mainpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 41vh 59vh;
+        grid-template-areas: 
+        "header"
+        "coins"
+      } */
+      #alert {
+        margin-top: 5px;
+        width: 300px;
+        height: 9vh;
+        margin-right:20px;
+        text-align: center;
+      }
+      img.logo {
+        margin-left:1rem;
+        margin-bottom:10px;
+      }
+     }
+
+
+.header {
+  /* grid-area: header; */
+width: 100vw;
+
+}
+
+.coins {
+  /* grid-area: coins; */
+  overflow-y:auto;
+  
+
+}
+.cryptocards {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  overflow-y:auto;
+  width: 100vw;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+
+
+}
+
+.cryptocard {
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 120px;
+  margin-top: 20px;
+  height: 225px;
+}
+
+.switch {
+  margin-left: 5.5rem;
+}
+
+h5{
+  text-align: center;
+}
+
+img.coinimgs, .logo {
+  margin-left:5rem;
+  margin-bottom:10px;
+}
+
+.moreInfo {
+  width: 100px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left: 3.5rem;
+
+}
+.hide {
+  display: none;
+}
+
+.moreinfobox {
+  border: 1px black solid;
+  background-color: #ffffff;
+  display:none;
+  width: 13rem;
+  height: 120px;
+  margin-top: 25px;
+  border-radius: 25px;
+
+}
+
+.moreinfobox .moreinfoimg {
+  margin-top: 10px;
+  margin-left: 6rem;
+  height: 20px;
+  width: 20px;
+}
+.moreinfotxt {
+  text-align: center;
+  margin-bottom: 1px;
+  font-size: 14px;
+}
+
+.cryptocardshow {
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 400px;
+  animation-name: cryptocardshow;
+  animation-duration: 2s;
+}
+.cryptocardhide {
+  margin-left:10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 225px;
+  animation-name: cryptocardhide;
+  animation-duration: 2s;
+}
+
+@keyframes cryptocardshow{
+  from{height: 225px;}
+  to{height: 400px;}
+}
+@keyframes cryptocardhide{
+  from{height: 400px;}
+  to{height: 225px;}
+}
+.alerts {
+display: flex;
+justify-content: center;
+}
+
+.alert {
+  margin-top: 5px;
+  width: 30vw;
+  height: 7vh;
+  margin-right:20px;
+  text-align: center;
+}
+/* About me page */
+.wrapper {
+  padding: 100px;
+  width: 600px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
+
+.aboutsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileimg {
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  width: 300px;
+  height: 300px;
+  margin-top:20px;
+}
+
+
+/* pop up DIV */
+.checkedpopup {
+  width: 80vw;
+}
+
+.popupswitch {
+  height: 40px;
+}
